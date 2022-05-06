@@ -36,24 +36,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyComposeTheme {
                 LayoutsCodelab()
-//                Surface(color = MaterialTheme.colors.onPrimary) {
-//                    RecyclerView(data = User.getData())
-//                }
             }
-            // A surface container using the 'background' color from the theme
-//            Column(
-//                modifier = Modifier
-//                    .fillMaxSize()
-//                    .padding(16.dp)
-//            ) {
-//                Text("Hello")
-//            }
         }
-        val str = Build.DISPLAY
-        val setting: String = Build.BRAND + ":" +
-                Build.DEVICE + " : " + Build.HARDWARE + ":" + Build.FINGERPRINT
-        val str1 = Util.getDeviceInfo(this, Constants.DEVICE_MAC_ADDRESS)
-        Log.d(TAG, "onCreate: $setting")
     }
 
     @OptIn(ExperimentalMaterialApi::class)
