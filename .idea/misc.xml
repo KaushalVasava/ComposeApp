@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Android Projects/MyCompose/app/src/main/res/drawable/ic_bubble.xml" value="0.191" />
+        <entry key="..\:/Projects/Android Projects/MyCompose/app/src/main/res/drawable/ic_headphone.xml" value="0.191" />
+        <entry key="..\:/Projects/Android Projects/MyCompose/app/src/main/res/drawable/ic_home.xml" value="0.191" />
+        <entry key="..\:/Projects/Android Projects/MyCompose/app/src/main/res/drawable/ic_moon.xml" value="0.191" />
+        <entry key="..\:/Projects/Android Projects/MyCompose/app/src/main/res/drawable/ic_music.xml" value="0.191" />
         <entry key="..\:/Projects/Android Projects/MyCompose/app/src/main/res/drawable/ic_play.xml" value="0.1" />
+        <entry key="..\:/Projects/Android Projects/MyCompose/app/src/main/res/drawable/ic_profile.xml" value="0.191" />
         <entry key="..\:/Projects/Android Projects/MyCompose/app/src/main/res/drawable/ic_search.xml" value="0.1" />
+        <entry key="..\:/Projects/Android Projects/MyCompose/app/src/main/res/drawable/ic_videocam.xml" value="0.191" />
       </map>
     </option>
   </component>

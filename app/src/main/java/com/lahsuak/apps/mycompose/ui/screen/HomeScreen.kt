@@ -40,28 +40,28 @@ fun HomeScreen() {
             FeatureSection(features = listOf(
                 Feature(
                     title = "Sleep meditation",
-                    R.drawable.ic_play,
+                    R.drawable.ic_headphone,
                     BlueViolet1,
                     BlueViolet2,
                     BlueViolet3
                 ),
                 Feature(
                     title = "Tips for sleeping",
-                    R.drawable.ic_search,
+                    R.drawable.ic_videocam,
                     LightGreen1,
                     LightGreen2,
                     LightGreen3
                 ),
                 Feature(
                     title = "Night island",
-                    R.drawable.ic_search,
+                    R.drawable.ic_moon,
                     OrangeYellow1,
                     OrangeYellow2,
                     OrangeYellow3
                 ),
                 Feature(
                     title = "Calming sounds",
-                    R.drawable.ic_search,
+                    R.drawable.ic_music,
                     Beige1,
                     Beige2,
                     Beige3
@@ -70,13 +70,14 @@ fun HomeScreen() {
             )
         }
         BottomMenu(items = listOf(
-            BottomMenuContent("Home", R.drawable.ic_play),
-            BottomMenuContent("Meditate", R.drawable.ic_search),
-            BottomMenuContent("Sleep", R.drawable.ic_play),
-            BottomMenuContent("Music", R.drawable.ic_search),
-            BottomMenuContent("Profile", R.drawable.ic_play),
+            BottomMenuContent("Home", R.drawable.ic_home),
+            BottomMenuContent("Meditate", R.drawable.ic_bubble),
+            BottomMenuContent("Sleep", R.drawable.ic_moon),
+            BottomMenuContent("Music", R.drawable.ic_music),
+            BottomMenuContent("Profile", R.drawable.ic_profile),
         ),
-            modifier = Modifier.align(BottomCenter))
+            modifier = Modifier.align(BottomCenter)
+        )
     }
 }
 
@@ -91,14 +92,14 @@ fun GreetingSection() {
         Column(verticalArrangement = Arrangement.Center) {
             Text(text = "Good Morning, Kaushal",
                 style = MaterialTheme.typography.h4,
-                color = androidx.compose.ui.graphics.Color.White)
+                color = Color.White)
             Text(text = "We wish you have a good day!",
                 style = MaterialTheme.typography.body1,
-                color = androidx.compose.ui.graphics.Color.White)
+                color = Color.White)
         }
         Icon(painter = painterResource(id = R.drawable.ic_search),
             contentDescription = "Search",
-            tint = androidx.compose.ui.graphics.Color.White,
+            tint = Color.White,
             modifier = Modifier.size(24.dp))
     }
 }
@@ -151,7 +152,7 @@ fun DailyThought() {
             }
             Icon(painter = painterResource(id = R.drawable.ic_play),
                 contentDescription = "Play",
-                tint = androidx.compose.ui.graphics.Color.White,
+                tint = Color.White,
                 modifier = Modifier.size(24.dp))
         }
     }
@@ -253,7 +254,7 @@ fun FeatureItem(feature: Feature) {
             Icon(
                 painter = painterResource(id = feature.iconId),
                 contentDescription = feature.title,
-                tint = androidx.compose.ui.graphics.Color.White,
+                tint = Color.White,
                 modifier = Modifier.align(Alignment.BottomStart)
             )
             Text(
@@ -279,7 +280,7 @@ fun BottomMenu(
     items: List<BottomMenuContent>,
     modifier: Modifier = Modifier,
     activeHighlightColor: Color = ButtonBlue,
-    activeTextColor: Color = androidx.compose.ui.graphics.Color.White,
+    activeTextColor: Color = Color.White,
     inactiveTextColor: Color = AquaBlue,
     initialSelectedItemIndex: Int = 0,
 ) {
@@ -313,7 +314,7 @@ fun BottomMenuItem(
     item: BottomMenuContent,
     isSelected: Boolean = false,
     activeHighlightColor: Color = ButtonBlue,
-    activeTextColor: Color = androidx.compose.ui.graphics.Color.White,
+    activeTextColor: Color = Color.White,
     inactiveTextColor: Color = AquaBlue,
     onItemClick: () -> Unit,
 ) {
@@ -325,7 +326,7 @@ fun BottomMenuItem(
         }
     ) {
         Box(
-            contentAlignment = Alignment.Center,
+            contentAlignment = Center,
             modifier = Modifier
                 .clip(RoundedCornerShape(10.dp))
                 .background(if (isSelected) activeHighlightColor else Transparent)
