@@ -22,12 +22,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyComposeTheme {
-                Surface(modifier = Modifier.fillMaxSize()) {
-                    Box(contentAlignment = Alignment.Center) {
-                        HomeScreen()
-                    }
-                }
-
+                HomeScreen()
             }
         }
     }
@@ -39,10 +34,6 @@ class MainActivity : ComponentActivity() {
     )
     @Composable
     fun PreviewApp() {
-        Surface(modifier = Modifier.fillMaxSize()) {
-            Box(contentAlignment = Alignment.Center) {
-                HomeScreen()
-            }
-        }
+        HomeScreen()
     }
 }
