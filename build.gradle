@@ -1,4 +1,4 @@
-buildscript {
+buildscript{
     ext {
         compose_version = '1.0.1'
     }
