@@ -6,6 +6,7 @@ import android.content.res.Configuration
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -36,6 +37,7 @@ import androidx.navigation.compose.rememberNavController
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.rememberMultiplePermissionsState
 import com.lahsuak.apps.mycompose.ui.BottomNavItem
+import com.lahsuak.apps.mycompose.ui.ExpandableCard
 import com.lahsuak.apps.mycompose.ui.isPermanentlyDenied
 import com.lahsuak.apps.mycompose.ui.theme.*
 
@@ -45,31 +47,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyComposeTheme {
-                PermissionHandle()
-//                val navController = rememberNavController()
-//                Scaffold(
-//                    bottomBar = {
-//                        BottomNavigationBar(items = listOf(
-//                            BottomNavItem("Home",
-//                                "home",
-//                                icon = Icons.Default.Home),
-//                            BottomNavItem("Chat",
-//                                "chat",
-//                                icon = Icons.Default.Email),
-//                            BottomNavItem("Settings",
-//                                "settings",
-//                                icon = Icons.Default.Settings)
-//                        ),
-//                            navController = navController,
-//                            onItemClick = {
-//                                navController.navigate(it.route)
-//                            }
-//                        )
-//                    }
-//                ) {
-//                    Navigation(navController = navController)
-//                }
+                ExpandableCard()
             }
+
         }
     }
 
